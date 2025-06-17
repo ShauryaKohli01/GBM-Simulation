@@ -34,12 +34,12 @@ Monte Carlo runs GBM many times with random paths:
 
 Key parameters:
 ```python
-S0 = 100        # initial stock price
-mu = 0.1        # expected return
-sigma = 0.1123  # volatility
-T = 1           # time in years
-N = 252         # steps (daily)
-M = 10,000      # simulation runs
+S0 = 10         # Initial stock price
+T = 1           # Time horizon (e.g., 1 year)
+dt = 0.002      # Time step
+r = 0.02        # Risk-free rate
+vol = 0.02      # Volatility
+n = 1000        # Number of simulations
 ```
 
 Simulation:
